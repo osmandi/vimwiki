@@ -322,7 +322,7 @@ function! vimwiki#base#system_open_link(url) abort
       else
         let url = shellescape(a:url, 1)
       endif
-      execute 'silent ! start "Title" /B ' . url
+      execute 'silent ! start ' . url
 
     else
 
